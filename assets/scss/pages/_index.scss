@@ -1,0 +1,154 @@
+.title {
+	&-list {
+		width: 33.33%;
+		a {
+			display: block;
+			font-size: 32px;
+			font-weight: 500;
+			color: #000;
+			border: 1px solid #dcdcdc;
+			border-bottom: 8px solid transparent;
+			padding: 24px 0;
+			text-align: center;
+		}
+		a:hover {
+			border-bottom: 8px solid #aa0601;
+		}
+		@include pad {
+			a {
+				font-size: 24px;
+				padding: 16px 0;
+			}
+		}
+		@include mobile {
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.banner {
+	margin-bottom: 80px;
+	.bg1 {
+		background-image: url(../images/product-header-1.png);
+		background-size: cover;
+		background-position: center center;
+		height: 296px;
+		width: 100%;
+	}
+	.bg2 {
+		background-image: url(../images/product-header-2.png);
+		background-size: cover;
+		background-position: center center;
+		height: 296px;
+		width: 100%;
+	}
+	@include pad {
+		.bg1 {
+			background-image: url(../images/product-header-sm-1.png);
+		}
+		.bg2 {
+			background-image: url(../images/product-header-sm-2.png);
+		}
+	}
+	@include mobile {
+		.bg1 {
+			height: 136px;
+		}
+		.bg2 {
+			height: 136px;
+		}
+	}
+}
+
+.content {
+	&-title {
+		text-align: center;
+		margin-bottom: 32px;
+	}
+}
+.card-group {
+	flex-wrap: wrap;
+	margin: 0 -12px;
+	.card {
+		width: 25%;
+		padding: 0 12px;
+		margin-bottom: 80px;
+		&-title {
+			justify-content: space-between;
+			.card-money {
+				font-size: 24px;
+				font-weight: 500;
+				color: #aa0601;
+			}
+		}
+		.block {
+			width: 24px;
+			height: 24px;
+			border-radius: 4px;
+			background: #5f3e2d;
+			margin-right: 8px;
+		}
+		.block2 {
+			width: 24px;
+			height: 24px;
+			border-radius: 4px;
+			background: #b75929;
+		}
+	}
+	@include pad {
+		.card {
+			width: 50%;
+		}
+	}
+	@include mobile {
+		.card {
+			width: 100%;
+		}
+	}
+}
+
+.page {
+	margin-bottom: 80px;
+	&-group {
+		justify-content: center;
+	}
+	ul {
+		li {
+			border: 1px solid #555555;
+			margin-left: -1px;
+			.page-btn {
+				padding: 12px;
+				font-size: 19px;
+				color: #555555;
+			}
+			.page-btn:hover {
+				color: #555555;
+				background: #f2f2f2;
+			}
+			.page-num {
+				padding: 12px 16px;
+				font-size: 18px;
+				color: #555555;
+			}
+			.page-num:hover {
+				color: #fff;
+				background: #000;
+			}
+			.active {
+				color: #fff;
+				background: #000;
+			}
+			@include mobile {
+				.page-btn {
+					font-size: 16px;
+					padding: 12px 5px;
+				}
+				.page-num {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

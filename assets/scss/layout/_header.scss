@@ -1,0 +1,46 @@
+.header {
+	background: #aa0601;
+	color: #fff;
+	.nav-menu {
+		justify-content: space-between;
+		.nav-img {
+			padding: 12px 0;
+			width: 80px;
+		}
+	}
+	@include mobile-larger {
+		.nav-menu {
+			flex-wrap: wrap;
+		}
+	}
+	.menu {
+		&-item {
+			padding: 0 32px;
+			a {
+				display: block;
+				padding: 25px 0;
+				font-size: 20px;
+				color: #fff;
+			}
+			a:hover {
+				color: #000;
+			}
+		}
+	}
+	@include mobile-larger {
+		.menu {
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			.menu-item {
+				width: 50%;
+				border: 1px solid #fff;
+				padding: 0;
+				a {
+					padding: 12px 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
